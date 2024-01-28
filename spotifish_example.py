@@ -22,11 +22,7 @@ class SpotifishApp:
             text='Spotifish',
             font_size=30
         )
-        label_id = self.app.add_label(title)
-
-        self.app.remove_element(label_id)
-
-
+        self.app.add_label(title)
 
     def add_play_song_buttons(self):
         for i, song_name in enumerate(('song1', 'song2', 'song3')):
